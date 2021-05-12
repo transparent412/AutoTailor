@@ -454,20 +454,15 @@ h6 {
   margin: 0 auto;
 }
 
+body {
+  min-width: 1140px;
+}
+
 /******header******/
 
 .header {
   height: 100vh;
   min-width: 0;
-}
-
-.header__back {
-  width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .header__slider img {
@@ -602,6 +597,16 @@ h6 {
   letter-spacing: 0.025em;
   color: #ffffff;
   max-width: 385px;
+}
+
+.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .top-header__content {
@@ -918,8 +923,6 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .text-card-title {
@@ -1194,6 +1197,8 @@ h6 {
   display: flex;
   padding-top: 121px;
   padding-bottom: 121px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact__text {
@@ -1242,6 +1247,11 @@ h6 {
   right: 40px;
   margin-top: -884px;
   opacity: 0.2;
+}
+
+.contact__image img {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -1310,7 +1320,9 @@ h6 {
   .about__question {
     display: none;
   }
+}
 
+@media (max-width: 1445px) {
   .services__line {
     display: none;
   }
@@ -1319,19 +1331,7 @@ h6 {
     display: none;
   }
 
-  .portfolio__line {
-    display: none;
-  }
-
-  .portfolio__question {
-    display: none;
-  }
-
-  .testimonials__line {
-    display: none;
-  }
-
-  .testimonials__question {
+  .testimonials__quotes {
     display: none;
   }
 }
@@ -1339,6 +1339,14 @@ h6 {
 @media (max-width: 1440px) {
   .text-header__title {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services__bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1362,9 +1370,9 @@ h6 {
   }
 
   .about__image {
-    width: 100%;
     height: 100%;
     margin-top: 62px;
+    margin-bottom: 62px;
   }
 
   .about__image img {
@@ -1372,6 +1380,46 @@ h6 {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .services__leter {
+    display: none;
+  }
+
+  .portfolio__leter {
+    display: none;
+  }
+
+  .portfolio__line {
+    display: none;
+  }
+
+  .portfolio__question {
+    display: none;
+  }
+
+  .testimonials__leter {
+    display: none;
+  }
+
+  .testimonials__line {
+    display: none;
+  }
+
+  .testimonials__question {
+    display: none;
+  }
+
+  .contact__line {
+    display: none;
+  }
+
+  .contact__question {
+    display: none;
+  }
+
+  .contact__leter {
+    display: none;
   }
 }
 
